@@ -4,12 +4,12 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'g++ -o PES2UG20CS403-1 working-pipeline.cpp'
-                print "Build Successful"
+                echo "Build Successful"
             }
         }
         stage('Test') {
             steps {
-                ssh './PES2UG20CS403-1'
+                sh './PES2UG20CS403-1'
             }
         }
     }
