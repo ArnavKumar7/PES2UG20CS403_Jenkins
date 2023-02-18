@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                shh './PES2UG20CS403-1'
+                shhh './PES2UG20CS403-1'
             }
         }
     }
